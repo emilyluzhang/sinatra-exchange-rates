@@ -1,0 +1,7 @@
+<h1>Currency pairs</h1>
+
+<ul>
+<% @api_3lcountry.each do |country| %>
+  <li> <a href="/<%=country%>"> Convert 1 <%=country%> to ... </a> </li>
+<%end %>
+</ul>
