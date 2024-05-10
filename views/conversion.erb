@@ -1,0 +1,8 @@
+<h1> Convert <%=@original_currency%> to <%= @conversion_currency%> </h1>
+<% if @original_currency == @conversion_currency%>
+  <p> 1 <%=@original_currency%> equals 1 <%=@conversion_currency%>. </p>
+<% else %>
+  <p> 1 <%=@original_currency%> equals <%= @quote_val %> <%=@conversion_currency%>. </p>
+<% end %>
+
+<div><a> Go <a href = "/<%=@original_currency%>"> back </a> </a> </div>
